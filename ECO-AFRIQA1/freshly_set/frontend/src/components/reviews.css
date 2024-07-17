@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.custom-style {
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+    padding: 60px 20px; /* Add more padding to center content */
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #008000;
+    font-family: Inter, sans-serif;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 30px; /* Increased margin for spacing */
+}
+
+h2 {
+    width: 100%;
+    max-width: 829px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    margin: 0 auto 40px auto; /* Centering and margin for spacing */
+}
+
+.paragraph-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align elements */
+    gap: 20px; /* Space between elements */
+}
+
+.paragraph {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px); /* Four equal columns with gaps */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+.paragraph .name {
+    font-weight: bold;
+    margin-bottom: 10px; /* Increased margin for spacing */
+}
+
+.paragraph img {
+    width: 100px;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 10px; /* Increased margin for spacing */
+    object-fit: cover;
+}
+
+.paragraph p {
+    font-size: 0.8em;
+    line-height: 1.2;
+    margin-bottom: 10px; /* Increased margin for spacing */
+}
+
+.read-more-container {
+    text-align: center;
+    margin: 20px 0; /* Adjusted margin for spacing */
+}
+
+.read-more {
+    color: #FFF;
+    background-color: #48E3C7;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.svg-container {
+    display: flex;
+    justify-content: center; /* Center the SVG */
+    align-items: center;
+    margin-top: 30px; /* Increased margin for spacing */
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .paragraph-container {
+        display: flex;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    }
+
+    .paragraph {
+        flex: 0 0 100%; /* Each paragraph takes full width */
+        max-width: 90%;
+        margin: 0 5%; /* Center the paragraphs with some space on the sides */
+    }
+
+    h2 {
+        width: 90%;
+        max-width: 100%; /* Ensure it doesn't exceed container width */
+        margin: 20px auto 40px auto; /* Adjusted margin for spacing */
+        padding: 0 10px; /* Add padding to avoid overlap */
+    }
+
+    .custom-style {
+        padding: 20px; /* Adjust padding for mobile */
+    }
+}
